@@ -7,9 +7,12 @@ using namespace std;
 
 int fib(int N)
 {
-  //////////////////////////////////////////
-  // INSERT RECURSIVE IMPLEMENTATION HERE //
-  //////////////////////////////////////////
+    if (N<= 1){
+    return N;
+    }
+    else{
+        return fib(N-1) + fib(N-2);
+    }
 }
 
 int main ()
@@ -31,4 +34,5 @@ int main ()
 
   return 0;
 }
+
 
