@@ -1,20 +1,27 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
-////////////////////////////////
-// ADD FIZZBUZZ FUNCTION HERE //
-////////////////////////////////
-
-int main ()
-{
-  for (int n=1; n<=50; ++n)
-  {
-    ////////////////////////////////////////
-    // ADD CODE TO CALL FIZZBUZZ FUNCTION //
-    // AND PRINT THE RETURNED VALUE HERE  //
-    ////////////////////////////////////////
-
-  }
+string bruh(int n){
+    if (n%3==0) {
+    return  " fizz ";
+   }
+     if (n%5==0){
+        return  " buzz ";
+     }
+        if ((n%3==0) && (n%5==0)){
+            return " fizzbuzz ";
+     }
+    else {
+         return to_string(n);
+         }  
 }
+int main ()
+   {
+    for (int n=1; n<=50; ++n)
+     {
+       cout << " " << bruh(n);
+     }
+   }
+   
 
