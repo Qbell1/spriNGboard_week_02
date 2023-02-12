@@ -7,12 +7,22 @@ using namespace std;
 
 int fib(int N)
 {
-  //////////////////////////////////////////
-  // INSERT ITERATIVE IMPLEMENTATION HERE //
-  //////////////////////////////////////////
+    int x[N+1], y;
+    
+    x[1]=x[2]=1;
+    if (N<=1){
+        return N;
+    }
+    else{
+    for (y=3;y<=N;y++){
+        x[y]=x[y-1]+x[y-2];
+        
+    }
+     return x[N];
+}
 }
 
-int main ()
+int main()
 {
   for (int N=0; N<45; ++N)
   {
@@ -31,4 +41,3 @@ int main ()
 
   return 0;
 }
-
